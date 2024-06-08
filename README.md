@@ -2,7 +2,7 @@
 
 Extract prominent colors from an image
 
-[![Build Status](https://travis-ci.org/leonardokl/react-palette.svg?branch=master)](https://travis-ci.org/leonardokl/react-palette)
+[![Test](https://github.com/discope-net/react-palette/actions/workflows/test.yml/badge.svg)](https://github.com/discope-net/react-palette/actions/workflows/test.yml)
 
 ## Install
 ```
