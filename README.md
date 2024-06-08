@@ -11,18 +11,6 @@ npm i -S @discope-net/react-palette
 
 ## Usage
 ```jsx
-import Palette from '@discope-net/react-palette';
-// In your render...
-<Palette src={IMAGE_URL}>
-  {({ data, loading, error }) => (
-    <div style={{ color: data.vibrant }}>
-      Text with the vibrant color
-    </div>
-  )}
-</Palette>
-```
-
-```jsx
 import { usePalette } from '@discope-net/react-palette'
 
 const { data, loading, error } = usePalette(IMAGE_URL)
