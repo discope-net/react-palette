@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`return camelCased values 1`] = `
-Object {
+{
   "darkMuted": "#2a324b",
   "darkVibrant": "#0e7a4b",
   "lightMuted": "#9cceb7",

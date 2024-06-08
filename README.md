@@ -3,16 +3,15 @@
 Extract prominent colors from an image
 
 [![Build Status](https://travis-ci.org/leonardokl/react-palette.svg?branch=master)](https://travis-ci.org/leonardokl/react-palette)
-[![Coverage Status](https://coveralls.io/repos/github/leonardokl/react-palette/badge.svg?branch=master)](https://coveralls.io/github/leonardokl/react-palette?branch=master)
 
 ## Install
 ```
-npm i -S react-palette
+npm i -S @discope-net/react-palette
 ```
 
 ## Usage
 ```jsx
-import Palette from 'react-palette';
+import Palette from '@discope-net/react-palette';
 // In your render...
 <Palette src={IMAGE_URL}>
   {({ data, loading, error }) => (
@@ -24,7 +23,7 @@ import Palette from 'react-palette';
 ```
 
 ```jsx
-import { usePalette } from 'react-palette'
+import { usePalette } from '@discope-net/react-palette'
 
 const { data, loading, error } = usePalette(IMAGE_URL)
 

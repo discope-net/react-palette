@@ -1,0 +1,22 @@
+{
+  "$schema": "https://swc.rs/schema.json",
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": false,
+      "dynamicImport": false
+    },
+    "target": "esnext",
+    "loose": true,
+    "minify": {
+    }
+  },
+  "module": {
+    "type": "es6"
+  },
+  "exclude": [
+    "src/__mocks__/**",
+    "src/__tests__/**"
+  ]
+}

@@ -3,7 +3,15 @@
     "allowSyntheticDefaultImports": true,
     "jsx": "react",
     "target": "es5",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "dist",
+    "emitDeclarationOnly": true,
+    "skipLibCheck": true
   },
-  "exclude": ["src/__mocks__", "src/__tests__"]
+  "exclude": [
+    "src/__mocks__",
+    "src/__tests__",
+    "dist"
+  ]
 }

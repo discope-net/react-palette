@@ -1,6 +1,4 @@
 import Vibrant from "node-vibrant";
-import camelCase from "lodash.camelcase";
-import invoke from 'lodash.invoke';
 
 export type PaletteColors = {
   vibrant?: string;
@@ -14,10 +12,20 @@ export type PaletteColors = {
 
 export async function getPalette(src: string) {
   const palette = await Vibrant.from(src).getPalette();
-  const setPaletteColor = (acc, paletteName) => ({
-    ...acc,
-    [camelCase(paletteName)]: invoke(palette, [paletteName, 'getHex'])
-  });
 
-  return Object.keys(palette).reduce<PaletteColors>(setPaletteColor, {});
+  return Object.fromEntries(
+    Object.entries(palette).map(([key, swatch]) => {
+      if(!key[0]){
+        return [
+          key,
+          swatch.getHex()
+        ];
+      }
+
+      return [
+        `${key[0].toLowerCase()}${key.slice(1)}`,
+        swatch.getHex(),
+      ]
+    })
+  );
 }
